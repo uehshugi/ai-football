@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⚽ Тактический конструктор 2026</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎯 Тактический конструктор</h1>
+    <div class="controls">
+      <label>Схема:</label>
+      <select id="scheme">
+        <option value="4-4-2">4-4-2</option>
+        <option value="4-3-3">4-3-3</option>
+        <option value="3-5-2">3-5-2</option>
+        <option value="5-3-2">5-3-2</option>
+      </select>
+      <button id="analyze">🔍 Анализ</button>
+      <button id="reset">↺ Сброс</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="builder">
+      <!-- Палитра игроков -->
+      <div class="palette" id="palette">
+        <p><strong>Позиции</strong></p>
+        <div id="position-buttons"></div>
+      </div>
+
+      <!-- Поле -->
+      <div class="field" id="field"></div>
+
+      <!-- Панель разбора -->
+      <aside class="panel" id="panel">
+        <h2>📋 Разбор</h2>
+        <div id="panel-content">Выбери схему → расставь игроков → нажми «Анализ»</div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
